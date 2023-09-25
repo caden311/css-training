@@ -1,0 +1,56 @@
+.flex-container {
+
+    .box {
+        border: 1px solid lightgray;
+        margin: 2rem;
+        border-radius: .3rem;
+        .header {
+            margin: 1rem
+        }
+
+        .flex-container {
+            display: flex;
+            .input-field-lg {
+                margin: 0 .3rem;
+                flex: 2;
+            }
+            .input-field {
+                margin: 0 .3rem;
+                flex: 1;
+            }
+        }
+
+        .flex-direction {
+            display: flex;
+
+            .flex-grow-1 {
+                flex-grow: 1;
+            }
+            .flex-grow-2 {
+                flex-grow: 3;
+            }
+        }
+    }
+
+    .big-box {
+        margin: 2rem;
+        border: 1px solid lightgray;
+        
+        .header {
+            margin: 1rem
+        }
+
+        .flex-box {
+            display: flex;
+            height: 300px;
+
+            .blue-box {
+                width: 150px;
+                height: 100px;
+                background-color: lightblue;
+                margin: .2rem;
+            }
+        }
+
+    }
+}

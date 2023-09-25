@@ -1,0 +1,19 @@
+
+.container {
+    .list-item {
+        width: auto;
+        background-color: whitesmoke;
+        border: 1px solid lightgray;
+        display: flex;
+        align-items: center;
+        padding: .7rem;
+        margin: .3rem;
+        font-size: 1rem;
+        &:hover {
+            border: 1px solid darkgray;
+        }
+    }
+    .list-item:has(.icon) {
+        background-color: lightblue;
+    }
+}

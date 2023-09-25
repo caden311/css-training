@@ -1,0 +1,25 @@
+
+.page-container {
+    container-type: inline-size; // normal, size, inline-size - https://developer.mozilla.org/en-US/docs/Web/CSS/container-type
+    border: 4px solid #0000ff;
+    height: 500px;
+    display: flex;
+}
+
+.box {
+    background-color: lightgreen;
+    flex: 2
+}
+.second-box {
+    flex: 1;
+    background-color: lightpink;
+}
+
+@container(width < 600px) {
+    .box {
+        background-color: red;
+    }
+    .second-box {
+        background-color: red;
+    }
+}

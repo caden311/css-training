@@ -1,0 +1,27 @@
+.page-container {
+    margin: 2rem;
+
+    .button {
+        font-size: 10pt;
+        // property name | duration
+        transition: font-size .5s;
+        &:hover {
+            font-size: 12pt;
+        }
+    }
+
+    .box {
+        margin-top: 4rem;
+        width: 5rem;
+        height: 5rem;
+        background-color: lightblue;
+        
+        // property name | duration | easing function | delay
+        transition: all .6s; // ease-in .4s;
+        &:hover {
+            width: 7rem;
+            height: 7rem;
+            background-color: lightcoral;
+        }
+    }
+}

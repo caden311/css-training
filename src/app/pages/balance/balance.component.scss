@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    .title {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .title-balance {
+        max-width: 300px;
+        text-wrap: balance;
+        text-align: center;
+     
+    }
+    .title-letter {
+        max-width: 300px;
+        text-wrap: balance;
+        text-align: center;
+        &:first-of-type::first-letter {
+            initial-letter: 2 1; // Line-height  Offset
+        }
+    }
+}

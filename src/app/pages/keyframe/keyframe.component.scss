@@ -1,0 +1,59 @@
+.page-container {
+    margin: 2rem;
+    display: flex;
+    gap: 3rem;
+    .box {
+        width: 5rem;
+        height: 5rem;
+        background-color: lightblue;
+     
+    }
+    .animation-1 {
+        animation: down 5s linear infinite;
+        position: relative;
+    }
+    .animation-2 {
+        animation: down-up 10s linear infinite;
+        position: relative;
+    }
+    .animation-3 {
+        animation: multiple 10s linear infinite;
+        position: relative;
+    }
+
+    .animation-4 {
+        animation: sideways 10s linear infinite;
+        position: relative;
+    }
+}
+
+@keyframes down {
+    from {top: 0}
+    to { top: 500px}
+}
+
+@keyframes down-up {
+    0% {top: 0}
+    25% {top: 250px}
+    50% {top: 500px}
+    75% {top: 250px}
+    100% {top: 0}
+}
+
+
+
+@keyframes multiple {
+    0% {top: 0; background-color: lightcoral}
+    25% {top: 250px; background-color: lightgreen}
+    50% {top: 500px;  background-color: lightgray; height: 7rem;}
+    75% {top: 250px;  background-color: lightpink}
+    100% {top: 0;  background-color: lightcoral; height: 5rem;}
+}
+
+@keyframes sideways {
+    0% {top: 0; margin-left: 0;}
+    25% {top: 250px;  margin-left: 300px;}
+    50% {top: 500px; margin-left: 0px;}
+    75% {top: 250px ; margin-left: 300px;}
+    100% {top: 0 ; margin-left: 0px;}
+}
