@@ -1,6 +1,83 @@
 .page-container {
     display: flex;
     flex-direction: column;
-    margin: 1rem;
+    padding: 0 1rem;
     gap: 1rem;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(
+        50deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    a {
+        color: white;
+        text-align: left;
+        text-wrap: nowrap;
+        font-size: 16pt;
+    }
+    .item-header {
+        color: white;
+        text-decoration: underline;
+    }
+    .item {
+        display: inline-block;
+        text-decoration: none;
+        margin-left: 2rem;
+        width: fit-content;
+    
+    }
+    .item::after {
+        content: '';
+        width: 0px;
+        height: 1px;
+        display: block;
+        background: white;
+        transition: 400ms;
+    }
+    .item:hover::after {
+        width: 100%;
+    }
+
+    .animation-1 {
+        animation: round 10s linear infinite;
+        position: relative;
+    }
+    .animation-2 {
+        animation: round 8s linear infinite;
+        position: relative;
+    }
+    .size-1 {
+        color: white;
+        text-decoration: underline;
+        animation: size 18s linear infinite;
+        position: relative;
+    }
+    @keyframes round {
+        from {left: 0}
+        to { left: 100vw}
+    }
+
+    @keyframes size {
+        0% {font-size: 18pt; left: 0;}
+        50% { font-size: 40pt; left: 50%;}
+        100% {font-size: 18pt; left: 0}
+    }
+    
 }

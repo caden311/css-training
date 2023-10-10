@@ -1,8 +1,9 @@
 <div class="page-container">
 
 
-    <button class="button" mat-raised-button color="primary">Button</button>
-    <div class="box">
+    <button class="button" mat-raised-button color="primary" (click)=" clicked = !clicked">Button</button>
+   
+    <div class="box"></div>
 
-    </div>
+    <div [ngClass]="{box: true, move: clicked}"></div>
 </div>

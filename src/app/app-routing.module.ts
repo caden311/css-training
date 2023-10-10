@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContainerQueryComponent } from './pages/container-query/container-query.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HasQueryComponent } from './pages/has-query/has-query.component';
-import { BalanceComponent } from './pages/balance/balance.component';
 import { PopoverComponent } from './pages/popover/popover.component';
 import { AnimationComponent } from './pages/animation/animation.component';
 import { KeyframeComponent } from './pages/keyframe/keyframe.component';
@@ -19,7 +18,6 @@ const routes: Routes = [
   {component: PopoverComponent, path: 'popover'},
   {component: KeyframeComponent, path: 'keyframe'},
   {component: AnimationComponent, path: 'animation'},
-  {component: BalanceComponent, path: 'balance'},
   {component: HasQueryComponent, path: 'has-query'},
   {component: ContainerQueryComponent, path: 'container-query'},
   {path: '**', redirectTo: 'home'},
